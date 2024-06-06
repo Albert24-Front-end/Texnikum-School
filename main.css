@@ -1,0 +1,15 @@
+.form-group{
+    margin-bottom: 15px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+input, select {
+    width: 200px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.new_form{
+    margin-bottom: 15px;
+}

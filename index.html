@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Динамическая форма</h1>
+    <form id="dynamicForm">
+        <div class="form-group">
+            <label for="question">Выберите форму оплаты:</label>
+            <select id="question" name="question">
+                <option value="">Выберите опцию</option>
+                <option value="money">Наличными</option>
+                <option value="card">Картой</option>
+            </select>
+        </div>
+
+        <div id="cardTypeGroup" class="form-group" style="display:none;">
+            <label for="cardType">Выберите платежную систему:</label>
+            <select id="cardType" name="cardType">
+                <option value="">Выберите опцию</option>
+                <option value="humo">Humo</option>
+                <option value="uzcard">Uzcard</option>
+            </select>
+        </div>
+
+        <div id="moneyTypeGroup" class="form-group" style="display:none;">
+            <label for="moneyType">Выберите валюту:</label>
+            <select id="moneyType" name="moneyType">
+                <option value="">Выберите опцию</option>
+                <option value="humo">Доллары</option>
+                <option value="uzcard">Суммы</option>
+                <option value="uzcard">Рубли</option>
+            </select>
+        </div>
+    </form>
+    
+    <h1>Динамическая форма №2</h1>
+    <form action="">
+        <div class="new_form">
+            <label for="our_question">Payment form:</label>
+                <select name="our_question" id="our_question">
+                    <option value="">Select</option>
+                    <option value="cash1">Cash</option>
+                    <option value="card1">Card</option>
+                    <option value="transfer">Transfer</option>
+                </select>
+        </div>
+        <div id="currencyTypeGroup" class="new_form" style="display:none;">
+            <label for="currencyType">Select currency:</label>
+                    <option value="">Select</option>
+                    <option value="uzb">Sums</option>
+                    <option value="rub">Roubles</option>
+                    <option value="usd">Dollars</option>
+        </div>
+
+        <div id="cardTypeGroup1" class="new_form" style="display:none;">
+            <label for="cardType1">Select card:</label>
+                    <option value="">Select</option>
+                    <option value="uzcard">Uzcard</option>
+                    <option value="rub">Humo</option>
+                    <option value="visa">Visa</option>
+                    <option value="mc">MasterCard</option>
+                    <option value="mir">МИР</option>
+        </div>
+        
+        <div id="transferTypeGroup" class="new_form" style="display:none;">
+            <label for="transferType">Select transfer service:</label>
+                    <option value="">Select</option>
+                    <option value="wu">Western Union</option>
+                    <option value="pynr">Payoneer</option>
+                    <option value="mg">MoneyGram</option>
+        </div>
+
+    </form>
+    <script src="./main.js"></script>
+</body>
+</html>
